@@ -9,4 +9,14 @@
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>FoodCart</display-name>
+    <servlet-name>FoodCart</servlet-name>
+    <servlet-class>com.vibhorkolte.foodmenu.FoodCart</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FoodCart</servlet-name>
+    <url-pattern>/FoodCart</url-pattern>
+  </servlet-mapping>
 </web-app>
