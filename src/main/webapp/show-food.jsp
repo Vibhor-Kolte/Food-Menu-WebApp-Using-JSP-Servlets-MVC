@@ -1,6 +1,6 @@
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,12 +8,21 @@
 <title>Menu</title>
 </head>
 <body>
-	<p> Test </p>
+	<h1 align="center">Menu</h1>
 	<hr>
-	<c:forEach var="items" items="${foodItems}">
-		${items.id}	
-		${items.item}	
-		${items.price}	
-	</c:forEach>
+	<table border=1 cellpadding="30%" align="center" bordercolor="red">
+		<tr>
+			<td>Code	
+			<td>Item	
+			<td>Price	
+		</tr>
+		<c:forEach var="items" items="${foodItems}">
+			<tr>
+				<td>${items.id}	
+				<td>${items.item}	
+				<td>${items.price}	
+			</tr>
+		</c:forEach>
+	</table>
 </body>
 </html>
