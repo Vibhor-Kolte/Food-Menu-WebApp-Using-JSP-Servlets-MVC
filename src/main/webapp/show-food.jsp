@@ -11,7 +11,9 @@
 	<p> Test </p>
 	<hr>
 	<c:forEach var="items" items="${foodItems}">
-		${items}	
+		${items.id}	
+		${items.item}	
+		${items.price}	
 	</c:forEach>
 </body>
 </html>
